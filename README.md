@@ -133,6 +133,8 @@ return 0;
 
 OUTPUT:
 
+![image](https://github.com/Harsayazheni/EX.7-IMPLEMENTATION-OF-SYSTEM-CALLS-READ-WRITE-FORK-OPEN-CLOSE/assets/118708467/9d6c3f9c-f597-4692-bbef-fa80270ecbd4)
+
 RESULT:
 
 Thus, open, read, write, close , create , fork() system calls implemented successfully using c
