@@ -32,7 +32,7 @@ file if it doesn’t exist, O_EXCL: prevent creation if it already exists
 
 Syntax: int close(int fd);fd :filedescriptor
 
-6. read: From the file indicated by the file descriptor fd, the read() function reads cnt bytes of input into the memory area indicated by buf. A successful read() updates the access time for the file.
+4. read: From the file indicated by the file descriptor fd, the read() function reads cnt bytes of input into the memory area indicated by buf. A successful read() updates the access time for the file.
 
 Syntax: int read(int fd, char *buf, int size);
 
