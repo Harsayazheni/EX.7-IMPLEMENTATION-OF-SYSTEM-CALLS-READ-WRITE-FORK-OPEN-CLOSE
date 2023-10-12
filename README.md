@@ -60,7 +60,7 @@ cnt: length of buffer
 
 *File descriptor is integer that uniquely identifies an open file of the process.
 
-Algorithm:
+# Algorithm
 
 1. Star the program.
 
