@@ -1,9 +1,10 @@
 # EX.7-IMPLEMENTATION-OF-SYSTEM-CALLS-READ-WRITE-FORK-OPEN-CLOSE
 
-Aim: 
+# Aim 
+
 C program using open, read, write, close , create , fork() system calls.
 
-Theory:
+# Theory
 
 There are 5 basic system calls that Unix provides for file I/O.
 
@@ -71,71 +72,44 @@ a file.
 
 4. The string [] array is write into a file close it.
 
-5. Then the first is opened for read only mode and read the characters and displayed it and
-
-close the file.
+5. Then the first is opened for read only mode and read the characters and displayed it and close the file.
 
 6. Use Fork().
 
 7. Stop the program.
 
-Program:
-
-
+# Program
+```
 #include<sys/stat.h>
-
 #include<stdio.h>
-
 #include<fcntl.h>
-
 #include<sys/types.h>
-
 int main()
-
-
 {
-
 int n,i=0;
-
 int f1,f2;
-
 char c,strin[100];
-
 f1=open("data",O_RDWR|O_CREAT|O_TRUNC);
-
 while((c=getchar())!='\n')
-
 {
-
 strin[i++]=c;
-
 }
-
 strin[i]='\0';
-
 write(f1,strin,i);
-
 close(f1);
-
 f2=open("data",O_RDONLY);
-
 read(f2,strin,0);
-
 printf("\n%s\n",strin);
-
 close(f2);
-
 fork();
-
 return 0;
-
 }
+```
 
-OUTPUT:
+# OUTPUT
 
 ![image](https://github.com/Harsayazheni/EX.7-IMPLEMENTATION-OF-SYSTEM-CALLS-READ-WRITE-FORK-OPEN-CLOSE/assets/118708467/9d6c3f9c-f597-4692-bbef-fa80270ecbd4)
 
-RESULT:
+# RESULT
 
-Thus, open, read, write, close , create , fork() system calls implemented successfully using c
-program.
+Thus, open, read, write, close , create , fork() system calls implemented successfully using C program.
